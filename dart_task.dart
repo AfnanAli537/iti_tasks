@@ -9,10 +9,7 @@ int getValueOrZero(int? number) {
   return number ?? 0;
 }
 
-int? generateRandom() {
-  Random random = Random();
-  return random.nextBool() ? 100 : null;
-}
+int? generateRandom() => Random().nextBool() ? 100 : null;
 
 void main() {
   /// 2.Create a late variable named address, assign a US value to it and print it.
